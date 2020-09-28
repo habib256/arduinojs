@@ -1,4 +1,4 @@
-var socket = io.connect('http://localhost:3000');
+var socket = io.connect('http://localhost:3000/index.html');
 var state = false;
 var leftPressed = false;
 
@@ -7,11 +7,10 @@ function mouseClicked() {
         leftPressed = true;
     }
 }
-function preload() {
 
-}
 function setup() {
 }
+
 function draw() {
     if (leftPressed) {
         leftPressed = false
